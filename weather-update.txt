@@ -1,6 +1,0 @@
-location is Bhubaneswar,India.
-humidity is88percent.
-temperature is 22.2°C.
-wind is South 6 kmph.visibility is3.0 km.
-sunrise at 6 hours 24 minutes AM.
-sunset at 5 hours 30 minutes PM.

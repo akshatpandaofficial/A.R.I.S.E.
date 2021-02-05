@@ -2,7 +2,9 @@ import time
 import os
 from playsound import playsound
 
+# this is to change working directory to where music file is and you want your database file to be
 os.chdir('C://Users//AkshatPanda//Desktop//A.R.I.S.E//timer')
+# first if block is a quick timer which is not stored in database
 custom_permission = input('do you want to do a custom timer:')
 if custom_permission == 'no':
     hours = int(input('enter the number of hours (0-24):'))
@@ -12,6 +14,7 @@ if custom_permission == 'no':
     print('Time up')
     playsound('Alarm-Fast-A1-www.fesliyanstudios.com.mp3')
 else:
+    # this timer data is stored in a database
     create_permission = input('do you want to create a custom time:')
     if create_permission == 'yes':
         create_custom = input('name of your custom time:')

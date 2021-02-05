@@ -1,4 +1,4 @@
-# A.R.I.S.E.
+# A.R.I.S.E.\n
 Desktop Assistant;
 Target features;
 i.Alarm with database;

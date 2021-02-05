@@ -2,7 +2,11 @@ import datetime
 import time
 import os
 from playsound import playsound
+
+#this to change working directory to location where your music file is and where you would want to create your database file
 os.chdir('C://Users//AkshatPanda//Desktop//A.R.I.S.E//alarm')
+
+# this is to create an alarm
 create_permission = input('do you want to create an alarm ?:')
 if create_permission == 'yes':
     while True:
@@ -23,7 +27,7 @@ if create_permission == 'yes':
         with open('custom-alarm-database.txt','a') as f:
             f.write(f'{create_custom}:{custom_hours+custom_minutes+custom_seconds}\n')
         
-
+        # this will let you decide when to repeat your alarms        
         monday_repeat = input('do you want to repeat on monday ?(0 or 1):')
         tuesday_repeat = input('do you want to repeat on tuesday ?(0 or 1):')
         wednesday_repeat = input('do you want to repeat on wednesday ?(0 or 1):')
@@ -40,7 +44,7 @@ if create_permission == 'yes':
             break
         else:
             pass
-
+# this is the part where data from the text file created is parsed into 2 dictionaries one for time and one for repeat
 with open('custom-alarm-database.txt','r') as f:
     a = f.readlines()
     custom_dict = {}
@@ -58,6 +62,7 @@ with open('custom-alarm-database.txt','r') as f:
         for j in time_data:
             hours = hours + j
         int_hours = int(hours)
+        # time dictionary
         custom_dict[i.split('\n')[0].split(':')[0]] = [int_hours,minutes,seconds]
     
 
@@ -73,10 +78,11 @@ with open('custom-alarm-repeat-database.txt','r') as g:
                 temp_list.append([k,j])
                 week_list.remove(k)
                 break
+        # repeat dictionary
         repeat_dict[i.split('\n')[0].split(':')[0]] =  temp_list
 
 
-
+# script to run the alarm application using data in dictionaries
 run_permission = input('do you want to run the alarm application ?:')
 if run_permission == 'yes':
     while True:

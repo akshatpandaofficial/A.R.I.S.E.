@@ -1,10 +1,10 @@
 # A.R.I.S.E.
 
-This is an underconstruction project which is not complete the files displayed in repository are just applications which will be controlled by A.R.I.S.E.
+This is an underconstruction project which is not complete. The files displayed in repository are just applications which will be controlled by A.R.I.S.E.
 
 Desktop Assistant
 
-Target features
+Target features:-
 
 i.Alarm with database
 

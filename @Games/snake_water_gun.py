@@ -1,3 +1,6 @@
+# This is a basic snake,water,gun game running on random choices by computer
+# This is a problem in "Code with Harry" python programming series
+# However code is not plagiarised.
 import random
 list_moves = ['snake','water','gun']
 computer_move = random.choice(list_moves)

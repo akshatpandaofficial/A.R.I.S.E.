@@ -1,5 +1,11 @@
+# this is a script to make database and parse them to dictionaries to interact with data in them
+
 import os
+# this is to change working directory to location where song file is and where i want my database file
+
+
 os.chdir('C://Users//AkshatPanda//Desktop//A.R.I.S.E//timer')
+# this is to take input for time of timer
 create_custom = input('name of your custom time:')
 custom_hours = input('enter the number of hours (0-24):')
 custom_minutes = input('enter the number of minutes (0-60):')
@@ -13,9 +19,10 @@ if len(custom_minutes) == 1:
 if len(custom_minutes) == 2:
     custom_minutes = '0' + custom_minutes
 custom_dict = {}
-
+# this is to create a database and store your input for future reference
 with open('custom-timer-database.txt','a') as f:
     f.write(f'{create_custom}:{custom_hours+custom_minutes+custom_seconds}\n')
+# this is to parse data from databse to 
 with open('custom-timer-database.txt','r') as f:
     a = f.readlines()
     for i in a:

@@ -1,3 +1,7 @@
+# I made this project long back so ignore any noob code you come across
+# This is not my idea, but a coding problem in "Code with Harry" python programming series
+# However code is not plagiarised
+
 def getdate():
     import datetime
     return datetime.datetime.now()
@@ -9,6 +13,7 @@ client = input('Enter your name:')
 operation = input('Would you like to retrieve data or log it in:')
 datatype = input('Would you like diet data or exercise data:')
 
+# this function is a to make a database for new clients and track their food intake and exercise data
 def health_management_system(client):
     if operation == 'log':
         if datatype == 'diet':

@@ -6,11 +6,11 @@ Desktop Assistant
 
 Target features:-
 
-i.Alarm with database
+i.@Alarm with database
 
-ii.Timer with database
+ii.@Timer with database
 
-iii.Weather news
+iii.@Weather news
 
 iv.Music player
 
@@ -20,7 +20,7 @@ vi.Email notifier and replier
 
 vii.Social media handling
 
-viii.Scheduler app with database
+viii.@Scheduler app with database
 
 ix.playing videos from youtube
 
